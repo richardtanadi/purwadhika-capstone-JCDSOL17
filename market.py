@@ -34,5 +34,3 @@ market.add_fruit("Orange", 5, 1500)
 market.remove_fruit("Apple", 3)
 print(market.get_inventory())
 print(market.get_total_value())
-
-
