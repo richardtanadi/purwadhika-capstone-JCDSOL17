@@ -27,3 +27,12 @@ class FruitMarket:
         for fruit, details in self.inventory.items():
             total_value += details['quantity'] * details['price_per_unit']
         return total_value
+
+market = FruitMarket("Fruit Market", "Jl. Buah")
+market.add_fruit("Apple", 10, 2000)
+market.add_fruit("Orange", 5, 1500)
+market.remove_fruit("Apple", 3)
+print(market.get_inventory())
+print(market.get_total_value())
+
+
